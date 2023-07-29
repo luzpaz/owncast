@@ -6,7 +6,7 @@ The original Docker Hub image was [gabekangas/owncast](https://hub.docker.com/re
 
 ## Dependencies
 
-1. Install [Earthly](https://earthly.dev/get-earthly), a build automation tool. It uses our [Earthfile](https://github.com/owncast/owncast/blob/develop/Earthfile) to reproducably build the release files and Docker images.
+1. Install [Earthly](https://earthly.dev/get-earthly), a build automation tool. It uses our [Earthfile](https://github.com/owncast/owncast/blob/develop/Earthfile) to reproducibly build the release files and Docker images.
 2. Be [logged into Docker Hub](https://docs.docker.com/engine/reference/commandline/login/) with an account that has access to `gabekangas/owncast` and `owncast/owncast` so the images can be pushed to Docker Hub.
 
 ## Build release files

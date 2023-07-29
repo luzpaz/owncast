@@ -61,7 +61,7 @@ For each form input (or group of inputs) you make, you should:
 
 1. Get the field values that you want out of `serverConfig` from ServerStatusContext with `useContext`.
 2. Next we'll have to put these field values of interest into a `useState` in each grouping. This will help you edit the form.
-3. Because ths config data is populated asynchronously, Use a `useEffect` to check when that data has arrived before putting it into state.
+3. Because this config data is populated asynchronously, Use a `useEffect` to check when that data has arrived before putting it into state.
 4. You will be using the state's value to populate the `defaultValue` and the `value` props of each Ant input component (`Input`, `Toggle`, `Switch`, `Select`, `Slider` are currently used).
 5. When an `onChange` event fires for each type of input component, you will update the local state of each page with the changed value.
 6. Depending on the form, an `onChange` of the input component, or a subsequent `onClick` of a submit button will take the value from local state and POST the field's API.
@@ -85,7 +85,7 @@ Examples of Config form groups where there is 1 submit button for the entire gro
 #### Notes about `form-textfield-with-submit` and `form-togglefield` (with useSubmit=true)
 
 - The text field is intentionally designed to make it difficult for the user to submit bad data.
-- If you make a change on a field, a Submit buttton will show up that you have to click to update. That will be the only way you can update it.
+- If you make a change on a field, a Submit button will show up that you have to click to update. That will be the only way you can update it.
 - If you clear out a field that is marked as Required, then exit/blur the field, it will repopulate with its original value.
 
 - Both of these elements are specifically meant to be used with updating `serverConfig` fields, since each field requires its own endpoint.

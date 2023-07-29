@@ -207,7 +207,7 @@ export const ChatTextField: FC<ChatTextFieldProps> = ({ defaultText, enabled, fo
 
     // MDN lists this as deprecated, but it's the only way to save this paste
     // into the browser's Undo buffer. Plus it handles all the selection
-    // deletion, caret positioning, etc automaticaly.
+    // deletion, caret positioning, etc automatically.
     if (sanitized) document.execCommand('insertHTML', false, sanitized);
   };
 

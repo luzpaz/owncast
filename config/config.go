@@ -7,7 +7,7 @@ import (
 
 // These are runtime-set values used for configuration.
 
-// DatabaseFilePath is the path to the file ot be used as the global database for this run of the application.
+// DatabaseFilePath is the path to the file to be used as the global database for this run of the application.
 var DatabaseFilePath = "data/owncast.db"
 
 // LogDirectory is the path to various log files.

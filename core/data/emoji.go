@@ -22,7 +22,7 @@ var emojiCacheData = make([]models.CustomEmoji, 0)
 var emojiCacheModTime time.Time
 
 // UpdateEmojiList will update the cache (if required) and
-// return the modifiation time.
+// return the modification time.
 func UpdateEmojiList(force bool) (time.Time, error) {
 	var modTime time.Time
 

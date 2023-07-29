@@ -908,7 +908,7 @@ func GetHasPerformedInitialNotificationsConfig() bool {
 	return configured
 }
 
-// GetHideViewerCount will return if the viewer count shold be hidden.
+// GetHideViewerCount will return if the viewer count should be hidden.
 func GetHideViewerCount() bool {
 	hide, _ := _datastore.GetBool(hideViewerCountKey)
 	return hide
@@ -976,7 +976,7 @@ func GetDisableSearchIndexing() bool {
 	return disableSearchIndexing
 }
 
-// GetVideoServingEndpoint returns the custom video endpont.
+// GetVideoServingEndpoint returns the custom video endpoint.
 func GetVideoServingEndpoint() string {
 	message, _ := _datastore.GetString(videoServingEndpointKey)
 	return message

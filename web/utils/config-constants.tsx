@@ -279,7 +279,7 @@ export const TEXTFIELD_PROPS_CHAT_SUGGESTED_USERNAMES = {
   apiPath: API_CHAT_SUGGESTED_USERNAMES,
   placeholder: 'username',
   label: 'Default usernames',
-  tip: 'An optional list of chat usernames that new users get assigned. If the list holds less then 10 items, random names will be generated.  Users can change their usernames afterwards and the same username may be given out multple times.',
+  tip: 'An optional list of chat usernames that new users get assigned. If the list holds less then 10 items, random names will be generated.  Users can change their usernames afterwards and the same username may be given out multiple times.',
   min_not_reached: 'At least 10 items are required for this feature.',
   no_entries: 'The default name generator is used.',
 };
